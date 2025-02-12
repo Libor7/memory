@@ -1,0 +1,1 @@
+export const DEFAULT_CARD_SET_INDEX = 0;

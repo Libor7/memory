@@ -3,8 +3,10 @@ import { createTheme } from "@mui/material/styles";
 
 /** DATA */
 import COLOR_SCHEMES from "@src/data/colorSchemes";
+import store from "@src/store";
 
-const colors = COLOR_SCHEMES["bedtimeStory"];
+const { cardSets } = store.getState();
+const colors = COLOR_SCHEMES[cardSets.activeCardSet];
 
 export const theme = createTheme({
   breakpoints: {
