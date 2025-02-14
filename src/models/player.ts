@@ -1,5 +1,11 @@
+/** CLASSES */
+import Player from "@src/classes/Player";
+
 export interface IPlayer {
-  activeTurn: boolean;
-  foundPairsCount: number;
   id: number;
+  score: number;
+}
+
+export interface IPlayersState {
+  players: Player[];
 }

@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 
 /** OTHER */
 import cardSetsReducer from "./cardSets";
+import playersReducer from "./players";
 
 const store = configureStore({
   middleware: (getDefaultMiddleware) =>
@@ -13,6 +14,7 @@ const store = configureStore({
     }),
   reducer: {
     cardSets: cardSetsReducer,
+    players: playersReducer,
   },
 });
 
