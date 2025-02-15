@@ -10,6 +10,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 
+/** OTHER */
+import './i18n';
+
 /** STYLES */
 import "@src/index.scss";
 import CssBaseline from "@mui/material/CssBaseline";
